@@ -3,7 +3,7 @@
     }
     body{
         margin: 0;
-        font-family: ArialHelvetica, sans-serf ;
+        font-family: Arial, Helvetica, sans-serif;
         color: blue;
     }
     header 
@@ -28,7 +28,7 @@ nav {
     justify-content: center;
     gap: 30px;
     padding: 15px;
-    box-shadow: 0 2px 10px rgba(red, green, blue, alpha);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
 }
  nav > a{
     text-decoration: none;
@@ -70,3 +70,140 @@ nav {
  .btn:hover{
     background-color: #004cef;
  }
+/* CARD*/
+.section  {
+width:98%;
+max-width:1000px;
+margin:40px auto;
+}
+.section h2 {
+   text-align: center;
+   font-size: 32px;
+   color: #0f172a;
+   margin-top: 25px;
+}
+.card-list {
+display:flex;
+gap:20px;
+}
+.card {
+   flex:1;
+   background-color: white;
+   padding: 25px;
+   border-radius: 16px;
+   text-align: center;
+   box-shadow: 0 5px 18px rgba(0,0,0.08);
+   transition: 0.3s; /* hiệu ứng */
+}
+.card:hover {
+   transform : translateY(-6px);
+} 
+.card h3 {
+   color: #2563eb;
+   margin: 0;
+}
+.content-box {
+   background-color: white;
+   padding: 25px;
+   border-radius: 16px;
+   box-shadow: 0 5px 18px rgba(0, 0, 0, 0.08);
+}
+.content-box li {
+   margin-bottom: 10px;
+}
+/* table */
+table {
+   width: 100%;
+   border-collapse: collapse;
+   background-color: white;
+   border-radius: 12px;
+   overflow: hidden;
+   box-shadow:  0 5px 18px rgba(0, 0, 0, 0.08);
+
+}
+th
+{
+   background-color :#2563eb;
+   color:white;
+}
+
+th,
+td {
+   padding:14px;
+   text-align: center ;
+   border-bottom: 1px solid #e5e7eb;
+}
+
+
+tr:hover {
+   background-color: #eff6ef;
+   color: #004cef;
+}
+/* FORM ĐĂNG KÝ */
+.form-box
+{
+   max-width: 520px;
+   margin: 0 auto;
+   background-color: white;
+   padding: 30px;
+   border-radius: 16px;
+   box-shadow: 0 5px 18px rgba(0, 0, 0, 0.08);
+
+}
+label
+{
+   display: block;
+   font-weight: bold;
+   margin-top: 15px;
+}
+input,
+select {
+   width:100%;
+   padding:12px;
+   margin-top: 6px;
+   border: 1px solid #cbd5e1;
+   border-radius: 8px;
+   font-size:15px;
+}
+button {
+   width: 100%;
+   margin-top: 24px;
+   padding: 13px;
+   border: none;
+   border-radius: 8px;
+   background-color: #2563eb;
+   color: white;
+   font-weight: bold;
+   font-size: 16px;
+   cursor: pointer;
+}
+button:hover {
+   background-color: #004cef;
+}
+/* FOOTER */
+footer {
+   background-color: #1d4ed8;
+   color: white;
+   text-align: center;
+   padding: 22px;
+   margin-top: 50px;
+}
+/* Responsive */
+@media ( max-width:768px) {
+   nav {
+      flex-direction: column;
+      gap: 10px;
+   }
+   .hero {
+      padding: 35px 20px;
+   }
+   .hero h2 {
+      font-size: 32px;
+   }
+   .card-list {
+      flex-direction: column;
+   }
+   table {
+      font-size: 14px;
+   }
+}
